@@ -16,7 +16,7 @@ class GildedRoseTest(unittest.TestCase):
         gilded_rose.update_quality()
         self.assertEquals(80, items[0].quality)
     def test_Elixir(self):
-        items = [Item("Elixir of the Mongoose", 1, 45)]
+        items = [Item("Elixir of the Mongoose", 3, 45)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
         self.assertEquals(44, items[0].quality)
@@ -26,10 +26,10 @@ class GildedRoseTest(unittest.TestCase):
         gilded_rose.update_quality()
         self.assertEquals(0, items[0].quality)
     def test_Conjured(self):
-        items = [Item("Conjured Mana Cake", 1, 8)]
+        items = [Item("Conjured Mana Cake", 0, 8)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        self.assertEquals(6, items[0].quality)
+        self.assertEquals(4, items[0].quality)
 
 
 
