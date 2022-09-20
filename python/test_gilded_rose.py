@@ -4,7 +4,7 @@ import unittest
 from gilded_rose import Item, GildedRose
 
 
-class GildedRoseTest(unittest.TestCase):
+class GildedRoseTest(unittest.TestCase): # tests each item
     def test_Brie(self):
         items = [Item("Aged Brie", 1, 20)]
         gilded_rose = GildedRose(items)
